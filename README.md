@@ -3,6 +3,19 @@
 #### **Objective**
 Deploy a containerized app that exposes a `/counter` endpoint using Helm, ArgoCD, and KIND, and investigate any issues with the app behavior. 
 
+Correct Behaviour:
+```
+curl localhost/counter
+Counter value: 1
+curl localhost/counter
+Counter value: 2
+curl localhost/counter
+Counter value: 3
+curl localhost/counter
+Counter value: 4
+...
+```
+
 ### **📋 Task Details**
 
 #### **1. Helm Chart Creation**
@@ -30,10 +43,11 @@ Deploy a containerized app that exposes a `/counter` endpoint using Helm, ArgoCD
 #### **5. Document the Behaviour**
 - Observe the behavior of the `/counter` endpoint.
 - Note any anomalies or inconsistent responses.
-- Document your debugging process. 
+- Document your debugging process.
+- How do you monitor the application?
 
 #### **6. Root Cause Analysis**
-- If any issues are found, identify and clearly document the root cause.
+- Identify and clearly document the root cause if any issues are found.
 - Suggest or implement a fix if appropriate.
 
 ---
