@@ -22,6 +22,7 @@ Counter value: 4
 - Create a Helm chart named `metrics-app`.
 - The app is hosted at: `ghcr.io/cloudraftio/metrics-app:1.0`
 - It runs on port `8080` and exposes a `/counter` endpoint.
+- App needs a secret `PASSWORD` set to `MYPASSWORD`, available as an environment variable.
 
 
 #### **2. Local KIND Cluster Setup**
@@ -30,7 +31,7 @@ Counter value: 4
 - Configure ArgoCD to watch a Git repository containing your Helm chart.
 
 #### **3. App Deployment**
-- Use ArgoCD to deploy the app via the Helm chart.
+- Use ArgoCD to deploy the app via the Helm chart, keeping best practices in mind.
 
 #### **4. Ingress Setup**
 - Set up an ingress resource (e.g., NGINX ingress controller) to expose the app externally at:
