@@ -42,7 +42,7 @@ Counter value: 4
   `curl localhost:8080/counter`
 
 #### **5. Document the Behaviour**
-- Observe the behavior of the `/counter` endpoint.
+- Observe the behavior of the `/counter` endpoint when calling it multiple times.
 - Note any anomalies or inconsistent responses.
 - Document your debugging process.
 - How do you monitor the application?
