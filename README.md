@@ -20,7 +20,7 @@ Counter value: 4
 
 #### **1. Helm Chart Creation**
 - Create a Helm chart named `metrics-app`.
-- The app is hosted at: `ghcr.io/cloudraftio/metrics-app:1.1`
+- The Docker image is hosted at: `ghcr.io/cloudraftio/metrics-app:1.1`
 - It runs on port `8080` and exposes a `/counter` endpoint.
 - App needs a secret `PASSWORD` set to `MYPASSWORD`, available as an environment variable. How do you ensure that it is not written in git repo?
 
@@ -57,7 +57,7 @@ Counter value: 4
 ---
 
 ### ✅ **Submission Guidelines**
-- Submit via email:
+- Submit via email to talent@cloudraft.io:
   - Git repository link with:
     - Helm chart
     - ArgoCD configuration (`Application` manifest, etc.)
@@ -69,3 +69,6 @@ Counter value: 4
     - Root cause analysis if you find an issue.
     - Screenshots/logs as evidence
 - **Bonus Points** for using best practices.
+
+
+
