@@ -22,7 +22,7 @@ Counter value: 4
 - Create a Helm chart named `metrics-app`.
 - The Docker image is hosted at: `ghcr.io/cloudraftio/metrics-app:1.1`
 - It runs on port `8080` and exposes a `/counter` endpoint.
-- App needs a secret `PASSWORD` set to `MYPASSWORD`, available as an environment variable. How do you ensure that it is not written in git repo?
+- App needs a secret `PASSWORD` set to `MYPASSWORD`, available as an environment variable. Ensure it is securely passed. 
 
 
 #### **2. Local KIND Cluster Setup**
