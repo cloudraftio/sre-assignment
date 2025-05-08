@@ -42,11 +42,13 @@ Counter value: 4
 
 #### **5. Document the Behaviour**
 - Observe the behavior of the `/counter` endpoint when calling it multiple times.
-  Validate the response by accessing the URL *multiple times*. What is the response to each call? 
-  `curl localhost:8080/counter`
-  `curl localhost:8080/counter`
-  `curl localhost:8080/counter`
-  `curl localhost:8080/counter`
+  Validate the response by accessing the URL *multiple times*. What is the response to each call?
+```bash
+for i in $(seq 0 3)
+do 
+curl localhost:8080/counter
+done
+```
 - Note any anomalies or inconsistent or slow responses.
 - Document your debugging process.
 
