@@ -20,9 +20,9 @@ Counter value: 4
 
 #### **1. Helm Chart Creation**
 - Create a Helm chart named `metrics-app`.
-- The app is hosted at: `ghcr.io/cloudraftio/metrics-app:1.0`
+- The app is hosted at: `ghcr.io/cloudraftio/metrics-app:1.1`
 - It runs on port `8080` and exposes a `/counter` endpoint.
-- App needs a secret `PASSWORD` set to `MYPASSWORD`, available as an environment variable.
+- App needs a secret `PASSWORD` set to `MYPASSWORD`, available as an environment variable. How do you ensure that it is not written in git repo?
 
 
 #### **2. Local KIND Cluster Setup**
@@ -38,18 +38,21 @@ Counter value: 4
   ```
   http://<your-local-url>/counter
   ```
-- Validate the response by accessing the URL multiple times.
-  `curl localhost:8080/counter`
+
 
 #### **5. Document the Behaviour**
 - Observe the behavior of the `/counter` endpoint when calling it multiple times.
-- Note any anomalies or inconsistent responses.
+  Validate the response by accessing the URL *multiple times*. What is the response to each call? 
+  `curl localhost:8080/counter`
+  `curl localhost:8080/counter`
+  `curl localhost:8080/counter`
+  `curl localhost:8080/counter`
+- Note any anomalies or inconsistent or slow responses.
 - Document your debugging process.
-- How do you monitor the application?
 
 #### **6. Root Cause Analysis**
-- Identify and clearly document the root cause if any issues are found.
-- Suggest or implement a fix if appropriate.
+- Identify and document the root cause if any issues are found.
+- Could you suggest or implement a fix if appropriate?
 
 ---
 
@@ -63,6 +66,6 @@ Counter value: 4
   - Documentation
     - Deployment steps
     - Any issues found and how they were diagnosed
-    - Root cause analysis (if any)
+    - Root cause analysis if you find an issue.
     - Screenshots/logs as evidence
 - **Bonus Points** for using best practices.
