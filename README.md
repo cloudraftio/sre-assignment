@@ -20,7 +20,7 @@ Counter value: 4
 
 #### **1. Helm Chart Creation**
 - Create a Helm chart named `metrics-app`.
-- The Docker image is hosted at: `ghcr.io/cloudraftio/metrics-app:1.1`
+- The Docker image is hosted at: `ghcr.io/cloudraftio/metrics-app:1.4`
 - It runs on port `8080` and exposes a `/counter` endpoint.
 - App needs a secret `PASSWORD` set to `MYPASSWORD`, available as an environment variable. Ensure it is securely passed. 
 
@@ -44,9 +44,9 @@ Counter value: 4
 - Observe the behavior of the `/counter` endpoint when calling it multiple times.
   Validate the response by accessing the URL *multiple times*. What is the response to each call?
 ```bash
-for i in $(seq 0 3)
+for i in $(seq 0 20)
 do 
-curl localhost:8080/counter
+time curl localhost:8080/counter
 done
 ```
 - Note any anomalies or inconsistent or slow responses.
