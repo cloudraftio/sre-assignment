@@ -60,17 +60,15 @@ done
 
 ### ✅ **Submission Guidelines**
 - Submit via email to talent@cloudraft.io:
-  - Git repository link with:
+  - Git private repository link with:
     - Helm chart
     - ArgoCD configuration (`Application` manifest, etc.)
     - Ingress 
     - Any scripts/configs used to bootstrap the KIND + ArgoCD setup
+    - Add reviewers as collaborators (`anjuls`, `riteshsonawane1372`, `vishalanarase`)
   - Documentation
     - Deployment steps
     - Any issues found and how they were diagnosed
     - Root cause analysis if you find an issue.
     - Screenshots/logs as evidence
 - **Bonus Points** for using best practices.
-
-
-
